@@ -192,8 +192,8 @@ config: Dict[str, Any] = {
                         'on': True,
                         'props': {
                             'snapshot_arn': 'arn:aws:rds:us-west-2:565393070554:snapshot:staging-db',
-                            'allocated_storage': 10,
-                            'max_allocated_storage': 20,
+                            'allocated_storage': 20,
+                            'max_allocated_storage': 40,
                             'instance_type': InstanceType.of(
                                 InstanceClass.BURSTABLE3,
                                 InstanceSize.MEDIUM,
@@ -257,8 +257,8 @@ config: Dict[str, Any] = {
                         'on': True,
                         'props': {
                             'snapshot_arn': 'arn:aws:rds:us-west-2:495599754696:snapshot:prod-db',
-                            'allocated_storage': 10,
-                            'max_allocated_storage': 20,
+                            'allocated_storage': 20,
+                            'max_allocated_storage': 40,
                             'instance_type': InstanceType.of(
                                 InstanceClass.BURSTABLE3,
                                 InstanceSize.MEDIUM,
