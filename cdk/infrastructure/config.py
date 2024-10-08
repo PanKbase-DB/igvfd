@@ -191,9 +191,9 @@ config: Dict[str, Any] = {
                         'construct_id': 'Postgres',
                         'on': True,
                         'props': {
-                            'snapshot_arn': 'arn:aws:rds:us-west-2:565393070554:snapshot:pankbase-staging-snapshot',
-                            'allocated_storage': 200,
-                            'max_allocated_storage': 400,
+                            'snapshot_arn': 'arn:aws:rds:us-west-2:565393070554:snapshot:pankbase-staging-snapshot-08',
+                            'allocated_storage': 10,
+                            'max_allocated_storage': 20,
                             'instance_type': InstanceType.of(
                                 InstanceClass.BURSTABLE3,
                                 InstanceSize.MEDIUM,
@@ -256,9 +256,9 @@ config: Dict[str, Any] = {
                         'construct_id': 'Postgres',
                         'on': True,
                         'props': {
-                            'snapshot_arn': 'arn:aws:rds:us-west-2:565393070554:snapshot:pankbase-staging-snapshot',
-                            'allocated_storage': 200,
-                            'max_allocated_storage': 400,
+                            'snapshot_arn': 'arn:aws:rds:us-west-2:565393070554:snapshot:pankbase-staging-snapshot-08',
+                            'allocated_storage': 10,
+                            'max_allocated_storage': 20,
                             'instance_type': InstanceType.of(
                                 InstanceClass.BURSTABLE3,
                                 InstanceSize.MEDIUM,
@@ -321,7 +321,7 @@ config: Dict[str, Any] = {
                         'construct_id': 'Postgres',
                         'on': True,
                         'props': {
-                            'snapshot_arn': 'arn:aws:rds:us-west-2:495599754696:snapshot:pankbase-production-snapshot',
+                            'snapshot_arn': 'arn:aws:rds:us-west-2:495599754696:snapshot:pankbase-production-snapshot-08',
                             'allocated_storage': 10,
                             'max_allocated_storage': 20,
                             'instance_type': InstanceType.of(
