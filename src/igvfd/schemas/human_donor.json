@@ -10,7 +10,6 @@
         "rrid",
         "living_donor",
         "bmi",
-        "diabetes_status",
         "diabetes_status_description",
         "taxa"
     ],
@@ -136,6 +135,7 @@
                     "Asian",
                     "Black",
                     "Black African",
+                    "Caucasian",
                     "Chinese",
                     "Colombian",
                     "Dai Chinese",
@@ -178,6 +178,7 @@
                     "Asian",
                     "Black",
                     "Black African",
+                    "Caucasian",
                     "Chinese",
                     "Colombian",
                     "Dai Chinese",
@@ -216,10 +217,11 @@
         "family_history_of_diabetes": {
             "title": "Family History of Diabetes",
             "description": "Family History of Diabetes",
-            "type": "boolean",
+            "type": "string",
+            "enum": ["true", "false", "N/A", "unknown"],
             "submissionExample": {
-                "appscript": false,
-                "igvf_utils": false
+                "appscript": "false",
+                "igvf_utils": "false"
             }
         },
         "family_history_of_diabetes_relationship": {
@@ -296,10 +298,10 @@
         "diabetes_duration": {
             "title": "Diabetes Duration (years)",
             "description": "Diabetes Duration in years",
-            "type": "number",
+            "type": "string",
             "submissionExample": {
-                "appscript": 21.03,
-                "igvf_utils": 21.03
+                "appscript": "21.03-22",
+                "igvf_utils": "21.03-22"
             }
         },
         "diabetes_status": {
@@ -513,21 +515,23 @@
             "items": {
                 "type": "string",
                 "enum": [
-                         "oral medications",
-                         "insulin",
-                         "other treatment",
+                         "Oral medications",
+                         "Insulin",
+                         "Other treatment",
                          "Metformin",
                          "Glipizide",
                          "Glimeperide",
                          "Ozempic",
                          "Pills of unknown name",
-                         "Metformin, Lantus, Trulicity",
+                         "Lantus",
+                         "Trulicity",
                          "Oral meds",
                          "Unknown pills",
                          "Glyxambi",
                          "Unknown medication",
                          "Unknown",
                          "No treatment"
+                         "N/A"
                         ]
                       },
             "submissionExample": {
@@ -555,7 +559,7 @@
         "taxa",
         "ethnicities",
         "human_donor_identifiers",
-        "diabetes_status",
+        "diabetes_status_description",
         "phenotypic_features.feature.term_name",
         "submitted_by.title"
     ],
