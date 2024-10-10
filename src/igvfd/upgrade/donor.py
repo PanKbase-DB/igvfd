@@ -173,7 +173,6 @@ def donor_12_13(value, system):
         value['notes'] = notes.strip()
 
 @upgrade_step('human_donor', '14', '15')
-@upgrade_step('human_donor', '14', '15')
 def human_donor_2_3(value, system):
     # Convert family_history_of_diabetes boolean to string
     if 'family_history_of_diabetes' in value:
