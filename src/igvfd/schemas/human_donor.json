@@ -72,7 +72,6 @@
             "title": "Related Donors",
             "description": "Familial relations of this donor also in PanKbase .",
             "type": "array",
-            "minItems": 1,
             "uniqueItems": true,
             "items": {
                 "title": "Related Donor",
@@ -125,7 +124,6 @@
             "comment": "We use http://bioportal.bioontology.org/ontologies/HANCESTRO as a template for the enum list of ethnicities.",
             "type": "array",
             "uniqueItems": true,
-            "minItems": 1,
             "items": {
                 "type": "string",
                 "enum": [
@@ -168,7 +166,6 @@
             "comment": "We use http://bioportal.bioontology.org/ontologies/HANCESTRO as a template for the enum list of ethnicities.",
             "type": "array",
             "uniqueItems": true,
-            "minItems": 1,
             "items": {
                 "type": "string",
                 "enum": [
@@ -228,7 +225,6 @@
             "title": "Family History of Diabetes Relationship",
             "type": "array",
             "description": "Family History of Diabetes Relationship.",
-            "minItems": 1,
             "uniqueItems": true,
             "items": {
                 "title": "Family History of Diabetes Relationship",
@@ -308,7 +304,6 @@
             "title": "Diabetes Status",
             "description": "Diabetes status T1D,T2D,MODY, etc. MONDO ontology term",
             "type": "array",
-            "minItems": 1,
             "uniqueItems": true,
             "items": {
                 "title": "Diabetes Status",
@@ -468,14 +463,12 @@
             "description": "Series of comma-separated values describing HLA types as: class, locus, allele1, allele2, method",
             "comment": "example: 'A,1,11:01,24:02,NGS', 'B,1,15:01,40:01,NGS', 'C,1,03:03,03:04,NGS'",
             "type": "array",
-            "minItems": 1,
 	    "uniqueItems": true
         },
         "other_tissues_available": {
             "title": "Other Tissues Available",
             "description": "Tissues obtained from the donor",
             "type": "array",
-            "minItems": 1,
             "uniqueItems": true,
             "items": {
                 "title": "Sample Term",
@@ -511,7 +504,6 @@
             "description": "Details the type of therapy or medication regimen the patient is on to manage blood glucose levels, including oral medications, insulin, or other treatments.",
             "type": "array",
             "uniqueItems": true,
-            "minItems": 1,
             "items": {
                 "type": "string",
                 "enum": [
@@ -543,7 +535,6 @@
             "title": "Human Donor Identifiers",
             "type": "array",
             "description": "Identifiers of this human donor.",
-            "minItems": 1,
             "uniqueItems": true,
             "permission": "admin_only",
             "items": {
