@@ -173,6 +173,7 @@ def donor_12_13(value, system):
         value['notes'] = notes.strip()
 
 @upgrade_step('human_donor', '14', '15')
+@upgrade_step('human_donor', '14', '15')
 def human_donor_2_3(value, system):
     # Convert family_history_of_diabetes boolean to string
     if 'family_history_of_diabetes' in value:
@@ -181,7 +182,6 @@ def human_donor_2_3(value, system):
             value['family_history_of_diabetes'] = 'true' if value['family_history_of_diabetes'] else 'false'
         elif value['family_history_of_diabetes'] is None:
             value['family_history_of_diabetes'] = 'N/A'
-
     # Convert diabetes_duration from number to string
     if 'diabetes_duration' in value:
         # Check if it's a number and convert it to a string
@@ -190,5 +190,12 @@ def human_donor_2_3(value, system):
         # Handle null or missing values if necessary
         elif value['diabetes_duration'] is None:
             value['diabetes_duration'] = 'N/A'
+    # Ensure Other Tissues Available defaults to an empty array if not present
+    if 'other_tissues_available' not in value or not isinstance(value['other_tissues_available'], list):
+        value['other_tissues_available'] = []
+    # Ensure Diabetes Status defaults to an empty array if not present
+    if 'diabetes_status' not in value or not isinstance(value['diabetes_status'], list):
+        value['diabetes_status'] = []
+
 
         
