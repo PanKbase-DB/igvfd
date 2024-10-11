@@ -305,6 +305,7 @@
             "description": "Diabetes status T1D,T2D,MODY, etc. MONDO ontology term",
             "type": "array",
             "uniqueItems": true,
+            "default": [],
             "items": {
                 "title": "Diabetes Status",
                 "comment": "See phenotype_term.json for available identifiers.",
@@ -469,6 +470,7 @@
             "title": "Other Tissues Available",
             "description": "Tissues obtained from the donor",
             "type": "array",
+            "default": [],
             "uniqueItems": true,
             "items": {
                 "title": "Sample Term",
