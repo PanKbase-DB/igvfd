@@ -215,7 +215,7 @@
             "title": "Family History of Diabetes",
             "description": "Family History of Diabetes",
             "type": "string",
-            "enum": ["true", "false", "N/A", "unknown"],
+            "enum": ["true", "false", "NA", "unknown"],
             "submissionExample": {
                 "appscript": "false",
                 "igvf_utils": "false"
@@ -525,7 +525,7 @@
                          "Unknown medication",
                          "Unknown",
                          "No treatment",
-                         "N/A"
+                         "NA"
                         ]
                       },
             "submissionExample": {
