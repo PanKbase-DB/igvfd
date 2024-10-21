@@ -171,11 +171,11 @@
             "type": "array",
             "items": {
                 "title": "Purity (Percentage)",
-                "type": "number",
+                "type": "number"
             },
             "submissionExample": {
-                "appscript": 12.47,
-                "igvf_utils": 12.47
+                "appscript": [12.47],
+                "igvf_utils": [12.47]
             }
         },
         "hand_picked": {
