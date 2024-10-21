@@ -464,7 +464,12 @@
             "description": "Series of comma-separated values describing HLA types as: class, locus, allele1, allele2, method",
             "comment": "example: 'A,1,11:01,24:02,NGS', 'B,1,15:01,40:01,NGS', 'C,1,03:03,03:04,NGS'",
             "type": "array",
-	    "uniqueItems": true
+	    "uniqueItems": true,
+            "items": {
+                "title": "HLA typing",
+                "description": "Series of comma-separated values describing HLA types as: class, locus, allele1, allele2, method",
+                "type": "string"
+            }
         },
         "other_tissues_available": {
             "title": "Other Tissues Available",
