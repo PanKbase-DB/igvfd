@@ -5,6 +5,7 @@ import igvfd.audit.construct_library_set
 import igvfd.audit.formatter
 import igvfd.audit.human_donor
 import igvfd.audit.in_vitro_system
+import igvfd.audit.index_file
 import igvfd.audit.matrix_file
 import igvfd.audit.file_set
 import igvfd.audit.analysis_set
@@ -37,6 +38,7 @@ AUDIT_MODULES_TO_PROCESS = [
     igvfd.audit.sample,
     igvfd.audit.tissue,
     igvfd.audit.treatment,
+    igvfd.audit.index_file,    
     igvfd.audit.whole_organism,
 ]
 

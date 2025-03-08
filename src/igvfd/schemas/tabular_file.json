@@ -112,6 +112,7 @@
                 "differential gene expression quantifications",
                 "differential transcript expression quantifications",
                 "editing templates",
+                "QC metrics",
                 "element quantifications",
                 "elements reference",
                 "fold change over control",

@@ -157,7 +157,6 @@
                             "bigBed",
                             "bigWig",
                             "bigInteract",
-                            "tabix",
                             "vcf"
                         ]
                     }
