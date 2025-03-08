@@ -5,7 +5,7 @@ from snovault.auditor import (
 from .formatter import (
     audit_link,
     path_to_text,
-    get_audit_description,
+    get_audit_message,
     space_in_words
 )
 
